@@ -1,0 +1,68 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #bg {
+        width: 100%;
+        height: 100%;
+        background-image: url(https://images.unsplash.com/photo-1575060873251-d6406e68c690?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+        background-size: cover;
+    }
+    
+    #overlay {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(17, 16, 16, 0.877);
+    }
+    
+    #center {
+        width: 60%;
+        height: 70%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #center img {
+        width: 250px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: cubic-bezier(0.175, 0.885, 0.32, 1.275).5s;
+    }
+    
+    #center img:hover {
+        transform: translate(-50%, -50%)scale(1.3);
+        z-index: 3000;
+        cursor: pointer;
+    }
+    
+    #center #a {
+        top: 180px;
+    }
+    
+    #center #b {
+        left: 400px;
+        z-index: 100;
+    }
+    
+    #center #c {
+        left: 500px;
+        top: 300px;
+    }
+    
+    #center #d {
+        left: 550px;
+        top: 200px;
+    }
